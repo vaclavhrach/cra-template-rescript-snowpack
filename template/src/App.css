@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 30vmin;
+    pointer-events: none;
+    margin-bottom: 4vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-heartBeat infinite 2s linear;
+    }
+}
+
+.App-header {
+    background-color: #14162c;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-heartBeat  {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.1);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}

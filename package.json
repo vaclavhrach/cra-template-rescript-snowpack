@@ -1,0 +1,31 @@
+{
+  "name": "cra-template-rescript-snowpack",
+  "version": "0.0.0-development",
+  "author": "Václav Hrach",
+  "license": "MIT",
+  "description": "ReScript + .React + Snowpack template for Create React App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaclavhrach/cra-template-rescript-snowpack.git"
+  },
+  "homepage": "https://github.com/vaclavhrach/cra-template-rescript-snowpack",
+  "bugs": "https://github.com/vaclavhrach/cra-template-rescript-snowpack/issues",
+  "keywords": [
+    "react",
+    "reason-react",
+    "create-react-app",
+    "template",
+    "rescript",
+    "snowpack"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "release": "semantic-release",
+    "acp": "git add . && npm run commit && git push",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^17.4.7"
+  }
+}
