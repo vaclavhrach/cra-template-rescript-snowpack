@@ -4,20 +4,26 @@
 
 @react.component
 let make = () =>
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+  <div className="app">
+    <header> <img src={logo} className="logo" alt="logo" /> </header>
+    <main>
       <p>
-        {React.string("Edit ")}
-        <code> {React.string("src/App.res ")} </code>
+        {React.string("Edit")}
+        <code> {React.string("src/App.res")} </code>
         {React.string("and save to reload.")}
       </p>
-      <a
-        className="App-link"
-        href="https://rescript-lang.org/"
-        target="_blank"
-        rel="noopener noreferrer">
-        {React.string("Learn Rescript")}
+    </main>
+    <footer>
+      <a href="https://rescript-lang.org/" target="_blank" rel="noopener noreferrer">
+        {React.string("Learn ReScript")}
       </a>
-    </header>
+      <span className="separator"> {React.string("|")} </span>
+      <a href="https://www.snowpack.dev/" target="_blank" rel="noopener noreferrer">
+        {React.string("Learn Snowpack")}
+      </a>
+      <span className="separator"> {React.string("|")} </span>
+      <a href="https://prettier.io/" target="_blank" rel="noopener noreferrer">
+        {React.string("Learn Prettier")}
+      </a>
+    </footer>
   </div>

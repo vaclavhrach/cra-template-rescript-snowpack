@@ -12,7 +12,6 @@
   "bugs": "https://github.com/vaclavhrach/cra-template-rescript-snowpack/issues",
   "keywords": [
     "react",
-    "reason-react",
     "create-react-app",
     "template",
     "rescript",
@@ -25,7 +24,24 @@
     "semantic-release": "semantic-release"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
     "cz-conventional-changelog": "^3.3.0",
     "semantic-release": "^17.4.7"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "verifyConditions": [
+      "@semantic-release/changelog"
+    ],
+    "prepare": [
+      "@semantic-release/changelog"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
