@@ -25,7 +25,7 @@ yarn create react-app --template=rescript-snowpack my-rescript-snowpack-app
 # Run app with builds and hot reload
 npm start
 
-# Build vite and rescript app
+# Build snowpack and rescript app
 npm run build
 
 # Run app without builds
