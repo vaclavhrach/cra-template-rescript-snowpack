@@ -19,6 +19,31 @@ or with yarn
 yarn create react-app --template=rescript-snowpack my-rescript-snowpack-app
 ```
 
+## Scripts
+
+```shell
+# Run app with builds and hot reload
+npm start
+
+# Build vite and rescript app
+npm run build
+
+# Run app without builds
+npm run dev 
+
+# Clear rescript lib folder 
+npm run clean
+
+# Start rescript app 
+npm run re:start
+
+# Build rescript app
+npm run re:build
+
+# Build snowpack
+npm run sp:build
+```
+
 ## Settings included
 
 - ReScript syntax (`*.res`)
