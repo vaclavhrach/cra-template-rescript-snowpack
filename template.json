@@ -1,13 +1,17 @@
 {
   "package": {
     "scripts": {
-      "dev": "snowpack dev",
+      "start:re": "rescript build -w",
+      "start:sp": "snowpack dev",
+      "start": "run-p start:**",
+      "build:re": "rescript build -with-deps",
+      "build:sp": "snowpack build",
+      "build": "run-s build:**",
       "clean": "rescript clean -with-deps",
-      "start": "run-p dev re:start",
-      "build": "run-s re:build sp:build",
-      "re:start": "rescript build -w",
-      "re:build": "rescript build -with-deps",
-      "sp:build": "snowpack build"
+      "format": "rescript format",
+      "test": "echo \"This template does not include a test runner by default.\" && exit 1",
+      "prepack": "git clean -fdx",
+      "postinstall": "rescript build -with-deps"
     },
     "dependencies": {
       "@rescript/react": "^0.10.3",
